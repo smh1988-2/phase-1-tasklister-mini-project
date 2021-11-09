@@ -34,7 +34,7 @@ button {
 
 #list {
   margin: 10px;
-  background: rgba(148, 61, 7, 0.5);
+  background: rgba(148, 61, 7, 0.75);
   padding: 15px 20px 18px 18px;
   border-radius: 15px;
   width: 50%;
@@ -55,6 +55,11 @@ ul {
 #tasks {
   font-weight: 500;
   font-size: 25px;
+}
+
+#counter {
+  color:white;
+  font-weight: 400;
 }
 
 input {
@@ -89,7 +94,7 @@ input[type=text], input[type=date], input[type=select] {
 input[type=submit] {
   background-color: rgba(148, 61, 7, 1);
   color: white;
-  width: 95%;
+  width: 50%;
   font-family: "American Typewriter", sans-serif;
 }
 
