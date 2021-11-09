@@ -11,7 +11,11 @@ body {
 }
 
 button {
-  font-size: 7px;
+  font-size: 12px;
+  background-color: aquamarine;
+  width: 100px;
+  height: 30px;
+  margin: 5px 0px 20px 1px;
 }
 
 #main-content {
@@ -34,4 +38,9 @@ button {
   padding: 15px 20px 18px 18px;
   border-radius: 5px;
   box-shadow: 2px 5px 5px #333;
+  width: 50%;
+}
+
+.my-task {
+  font-size: 30px;
 }
