@@ -52,15 +52,15 @@ function addEvent(e) {
   } else {
     if (newTaskPriority === "High") { //set the font color based on priority
       //newLi.className = "high";
-      newLi.style.color = "red";
+      newLi.style.color = "#572824";
     }
     if (newTaskPriority === "Medium") {
       newLi.className = "medium";
-      newLi.style.color = "yellow";
+      newLi.style.color = "#fbcc5f";
     }
     if (newTaskPriority === "Low") {
       newLi.className = "low";
-      newLi.style.color = "green";
+      newLi.style.color = "#a3ccc8";
     }
     
     document.querySelector("ul").appendChild(newLi); //append new task and delete button to the <ul>
@@ -97,7 +97,13 @@ function deleteTask(e) {
   reduceTaskSubmissions()
   const toDoCounter = document.querySelector("#counter");
   const taskCount = submissions.length;
-  toDoCounter.innerHTML = `You have ${taskCount} thing(s) to do.`; //refreshes task counter message
+  if (taskCount === 0) { //checks how many tasks and displays "thing/things" correctly
+    toDoCounter.innerHTML = `You have ${taskCount} things to do.`;
+    } else if (taskCount === 1) {
+    toDoCounter.innerHTML = `You have ${taskCount} thing to do.`;
+    } else if (taskCount > 1) {
+      toDoCounter.innerHTML = `You have ${taskCount} things to do.`;
+    }
   console.log("Ya DONE")//create message on completed tasks?
 }
 
